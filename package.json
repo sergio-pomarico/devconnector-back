@@ -1,0 +1,57 @@
+{
+  "name": "devconnector-backend",
+  "version": "1.0.0",
+  "description": "rest api to devconnector social network",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp lint",
+      "pre-push": "gulp lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergio-pomarico/devconnector-back.git"
+  },
+  "keywords": [
+    "rest-api",
+    "express",
+    "passport"
+  ],
+  "author": "Sergio Pomárico",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergio-pomarico/devconnector-back/issues"
+  },
+  "homepage": "https://github.com/sergio-pomarico/devconnector-back#readme",
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.14.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
+    "mongoose-bcrypt": "^1.6.0",
+    "mongoose-paginate": "^5.0.3",
+    "mongoose-unique-validator": "^2.0.2",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-notify": "^3.2.0",
+    "husky": "^1.1.2"
+  }
+}
